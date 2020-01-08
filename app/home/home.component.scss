@@ -1,0 +1,69 @@
+/* Add mobile styles for the component here.  */
+.bg-d1{
+    background: url('~/assets/img/d2.png');
+    width: 100%;
+    height: 100%;
+    // border: 1 black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#screen-wrapper{
+    background: url('~/assets/img/doraemon.png');
+    width: 100%;
+    height: 20%;
+    // border: 1 black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(500);
+}
+
+.que{
+    padding-top: 50%;
+    color: white;
+}
+
+.answer{
+    display: flex;
+    flex-direction: row;
+    border-color: red;
+  border-width: 3;
+  border-radius: 30;
+}
+
+.questions-wrapper{
+   
+    .questions-title{
+        background: white;
+        color: black;
+        margin: 10 0;
+        font-size: 24;
+        padding: 10;
+    }
+    .answers-wrapper{
+        background: rgba(0,0,0,0.6);
+        FlexboxLayout{
+            margin: 5 0;
+        }
+        Label{
+            margin: 10 10;
+            font-size: 20;
+            color: white;
+            text-align: left;
+            &:hover{
+  
+            }
+        }
+    }
+}
+
+.correct-answer{
+    background: green;
+    padding: 15;
+    Label{
+        font-size: 30;
+        color: white;
+    }
+}
