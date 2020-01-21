@@ -1,82 +1,83 @@
+<AbsoluteLayout id="login-wrapper" width="100%" height="100%">
+
+  <StackLayout (onloaded)="initialAnimation()" class="bg-d1" width="100%" height="100%">
+
+
+
+    <FlexboxLayout  width="100%" height="100%" justifyContent="center" flexDirection="column"
+      alignItems="center">
+
+      <AbsoluteLayout #loginContainer width="100%" height="100%">
+        <FlexboxLayout class="top-section" top="0" class="border" height="100" width="100%" justifyContent="space-between" alignItems="center"
+          class="que">
+
+          <FlexboxLayout width="120" height="120" class="lifelines">
+            <Image height="100" width="100" src='~/assets/img/fifty.png'></Image>
+          </FlexboxLayout>
+
+          <FlexboxLayout #doraemonTitle id="screen-wrapper"></FlexboxLayout>
+
+          <FlexboxLayout class="home-btn">
+            <Label text="Home"></Label>
+          </FlexboxLayout>
+
+        </FlexboxLayout>
+
+
+        <FlexboxLayout width="100%" top="100" justifyContent="center" flexDirection="column" alignItems="center"
+          class="questions-wrapper">
+          <StackLayout (tap)="getPermission()" class="questions-title" width="110%">
+            <Label top="500" [text]="selectedQuestion.question"> </Label>
+          </StackLayout>
+
+          <FlexboxLayout class="answers-wrapper" flexDirection="column">
+
+            <FlexboxLayout alignItems="flex-start"> <Label text="1."></Label> <Label
+                (tap)="checkAnswer(selectedQuestion.option1)" [text]="selectedQuestion.option1"> </Label>
+            </FlexboxLayout>
+
+            <FlexboxLayout alignItems="flex-start"> <Label text="2. "></Label> <Label
+                (tap)="checkAnswer(selectedQuestion.option2)" [text]="selectedQuestion.option2"> </Label>
+            </FlexboxLayout>
+
+            <FlexboxLayout alignItems="flex-start"> <Label text="3. "></Label> <Label
+                (tap)="checkAnswer(selectedQuestion.option3)" [text]="selectedQuestion.option3"> </Label>
+            </FlexboxLayout>
+
+            <FlexboxLayout alignItems="flex-start"> <Label text="4. "></Label> <Label
+                (tap)="checkAnswer(selectedQuestion.option4)" [text]="selectedQuestion.option4"> </Label>
+            </FlexboxLayout>
+
+
+          </FlexboxLayout>
+
+
+          <StackLayout *ngIf="correct" class="correct-answer">
+            <Label text="Correct Answer"></Label>
+          </StackLayout>
+
+        </FlexboxLayout>
+      </AbsoluteLayout>
+
+      <!-- <Button text="playground works!" class="btn btn-primary"></Button> -->
 
 
 
 
 
-<StackLayout (onloaded)="initialAnimation()"  class="p-20 bg-d1" width="100%" height="100%">
-
-  <AbsoluteLayout id="login-wrapper" width="100%" height="100%">
-
-      <FlexboxLayout   #loginContainer width="100%" height="100%"
-     justifyContent="center" flexDirection="column" alignItems="center">
-
-       <!-- <Button text="playground works!" class="btn btn-primary"></Button> -->
-
-       <StackLayout #doraemonTitle id="screen-wrapper" class="que">
-         
-       </StackLayout>
-
-
- <FlexboxLayout width="100%" height="100%"
-     justifyContent="center" flexDirection="column" alignItems="center" class="questions-wrapper">
-
-     <StackLayout class="questions-title"> 
-        <Label [text]="selectedQuestion.question">  </Label> 
-      </StackLayout>
-
-      
-      <StackLayout> 
-
-      <FlexboxLayout justifyContent="center" flexDirection="column" alignItems="center" class="answers-wrapper">
-
-      <FlexboxLayout justifyContent="center" flexDirection="row" alignItems="center">
-
-      <Label (tap)="checkAnswer(selectedQuestion.option1)" [text]="selectedQuestion.option1">  </Label> 
-
-      <Label (tap)="checkAnswer(selectedQuestion.option2)" [text]="selectedQuestion.option2">  </Label> 
-
-      </FlexboxLayout>
-
-      <FlexboxLayout justifyContent="center" flexDirection="row" alignItems="center">
-
-      <Label (tap)="checkAnswer(selectedQuestion.option3)" [text]="selectedQuestion.option3">  </Label> 
-
-      <Label (tap)="checkAnswer(selectedQuestion.option4)" [text]="selectedQuestion.option4">  </Label> 
-
-      </FlexboxLayout>
-
-      </FlexboxLayout>
-
-      </StackLayout>
-
-      <StackLayout *ngIf="correct" class="correct-answer">
-        <Label text="Correct Answer"></Label>
-      </StackLayout>
-
-  </FlexboxLayout>
-
-
-
-       <!-- <GridLayout columns="*,2*" rows="2*,3*" width="300" height="300" backgroundColor="lightgray" >
-          <Label text="Label 1" col="0" row="0" backgroundColor="red"> </Label>
-          <Label text="Label 2" col="1" row="0" backgroundColor="green"></Label>
-          <Label text="Label 3" col="0" row="1" backgroundColor="blue"></Label>
-          <Label text="Label 4" col="1" row="1" backgroundColor="yellow"></Label>
-        </GridLayout> -->
 
 
 
 
 
 
-       </FlexboxLayout>
 
-  </AbsoluteLayout>
-
- 
- 
- 
+    </FlexboxLayout>
 
 
+  </StackLayout>
 
-</StackLayout>
+  <Image height="200" width="200" src='~/assets/img/nobOnChair.png'></Image>
+
+
+</AbsoluteLayout>
