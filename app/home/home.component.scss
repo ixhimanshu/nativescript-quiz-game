@@ -10,18 +10,18 @@
 }
 
 .top-section{
-   margin: 0 200;
+   margin: 0 190;
 }
 
 .lifelines{
     margin: 0 20;
 }
 
-#screen-wrapper{
+.screen-wrapper{
     // margin-top: 25;
     background: url('~/assets/img/doraemon.png');
     width: 100%;
-    height: 25%;
+    height: 55%;
     // border: 1 black;
     background-position: center;
     background-size: contain;
@@ -82,6 +82,7 @@
 }
 
 .correct-answer{
+    transform: translateY(1000);
     background: green;
     padding: 15;
     Label{
@@ -93,4 +94,12 @@
 .border{
     border-width: 2;
     border-color: black;
+}
+
+.moneyWon {
+    background: green;
+    color: white;
+    font-size: 24;
+    padding: 10 20;
+    border-radius: 10;
 }

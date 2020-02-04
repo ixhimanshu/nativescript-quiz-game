@@ -1,0 +1,75 @@
+[
+    {
+        "question": "Gir National Park in Gujarat is famous for?",
+        "option1": "Elephant",
+        "option2": "Rhinoceros",
+        "option3": "Lion",
+        "option4": "Tiger",
+        "answer": "Lion"
+    },
+    {
+        "question": "Smallest state of India is?",
+        "option1": "Goa",
+        "option2": "Assam",
+        "option3": "Jammu & Kashmir",
+        "option4": "Sikkim",
+        "answer": "Goa"
+    },
+    {
+        "question": "Which of the following month have 31 days?",
+        "option1": "October",
+        "option2": "February",
+        "option3": "June",
+        "option4": "April",
+        "answer": "October"
+    },
+    {
+        "question": "Which of the following is not an outdoor game?",
+        "option1": "Cricket",
+        "option2": "Football",
+        "option3": "Hockey",
+        "option4": "Table tennis",
+        "answer": "Table tennis"
+    },
+    {
+        "question": "Young one of a cat is called?",
+        "option1": "Calf",
+        "option2": "Kitten",
+        "option3": "Puppy",
+        "option4": "Cub",
+        "answer": "Kitten"
+    },
+    {
+        "question": "Prime Minister of India is?",
+        "option1": "Manmohan Singh",
+        "option2": "Narendra Modi",
+        "option3": "Sonia Gandhi",
+        "option4": "Pranab Mukherjee",
+        "answer": "Narendra Modi"
+    },
+    {
+        "question": "Who invented Computer?",
+        "option1": "Thomas Alva Edison",
+        "option2": "Alexander Graham Bell",
+        "option3": "Charles Babbage",
+        "option4": "Pascal",
+        "answer": "Charles Babbage"
+    },
+    {
+        "question": "Capital of United States of America (USA) is:",
+        "option1": "New York",
+        "option2": "San Fransisco",
+        "option3": "California",
+        "option4": "Washington D.C",
+        "answer": "Washington D.C"
+    },
+    {
+        "question": "Brightest planet of the solar system is?",
+        "option1": "Mercury",
+        "option2": "Venus",
+        "option3": "Jupiter",
+        "option4": "Saturn",
+        "answer": "Venus"
+    }
+
+]
