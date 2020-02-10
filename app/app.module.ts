@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -15,11 +16,12 @@ import { HomeComponent } from './home/home.component';
   declarations: [
       AppComponent,
       HomeComponent,
+      LandingPageComponent,
   ],
   imports: [
       NativeScriptModule,
       HttpClientModule,
-      AppRoutingModule,
+      AppRoutingModule
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],

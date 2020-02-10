@@ -1,0 +1,46 @@
+<AbsoluteLayout #landing id="landing-wrapper" width="100%" height="100%">
+
+    <FlexboxLayout class="bg-d1 p-t-20"  width="100%" height="100%" justifyContent="flex-start" flexDirection="column"
+    alignItems="center">
+
+  
+
+        <FlexboxLayout width="100%" justifyConter="space-between" >
+
+            <Image  class="p-l-20 d-none" width="20%" height="20%" src="~/assets/img/playBtn.png"></Image>
+             
+
+            <FlexboxLayout #screenwrapper class="screen-wrapper" height="20%" width="70%" justifyContent="center" alignItems="center">
+            
+            </FlexboxLayout>
+
+        
+            <Image (tap)="navToHome()" height="20%" width="20%" src="~/assets/img/playBtn.png"></Image>
+                
+     
+
+
+        </FlexboxLayout>
+
+       
+
+        <FlexboxLayout class="instructionWrapper m-t-20" flexDirection="column" justifyContent="center" alignItems="flex-start">
+            <StackLayout class="m-b-10">
+                <Label text="Instructions:" textWrap="true"></Label>
+            </StackLayout>
+            <Label text="1. For every correct answer, you'll win money !" textWrap="true"></Label>
+            <Label text="2. There are 2 lifelines avilable from which you can pick" textWrap="true"></Label>
+            <Label text="3. Difficulties of questions will increase as per correct answers" textWrap="true"></Label>
+            <Label text="4. On completion of 10 correct questions, you'll receive a check from Doraemon" textWrap="true"></Label>
+            
+        </FlexboxLayout>
+
+
+
+
+    
+  </FlexboxLayout>
+
+
+
+</AbsoluteLayout>

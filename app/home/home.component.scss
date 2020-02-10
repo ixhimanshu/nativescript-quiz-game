@@ -1,6 +1,10 @@
+
+@import "../assets/styles/variables";
+
+
 /* Add mobile styles for the component here.  */
 .bg-d1{
-    background: url('~/assets/img/game2.png');
+    // background: url('~/assets/img/game2.png');
     width: 100%;
     height: 100%;
     // border: 1 black;
@@ -37,18 +41,17 @@
 .answer{
     display: flex;
     flex-direction: row;
-    border-color: red;
-  border-width: 3;
-  border-radius: 30;
+    border-color: $red;
+    border-width: 3;
+    border-radius: 30;
 }
 
 .questions-wrapper{
 
     margin-top: 10;
-   
     .questions-title{
         margin-bottom: 20;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.8);
         // background: #0363c3;
         border-width: 4;
         border-color: gold;
@@ -82,12 +85,12 @@
 }
 
 .correct-answer{
-    transform: translateY(1000);
-    background: green;
-    padding: 15;
-    Label{
-        font-size: 30;
+    Button{
+        font-size: 20;
         color: white;
+        background: $green;
+        // padding: 15;
+        border-radius: 10;
     }
 }
 
@@ -97,9 +100,87 @@
 }
 
 .moneyWon {
-    background: green;
+    background: $green;
     color: white;
     font-size: 24;
     padding: 10 20;
     border-radius: 10;
+}
+
+.isCorrectAnswer{
+    Label{
+        border-width: 2;
+        border-color: white;
+        border-radius: 10;
+        color: white;
+        font-size: 24;
+        padding: 10;
+    }
+}
+
+
+.bg-white{
+    background: white;
+    padding: 8;
+    border-radius: 50%;
+}
+
+.audience {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+    .audienceChild {
+        background: white;
+        padding: 20 50;
+        z-index: 100;
+        border-radius: 20;
+        Label {
+            color: black;
+            font-size: 24;
+        }
+    }
+   
+}
+
+.phone {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    .phoneChild {
+        background: white;
+        padding: 20 50;
+        z-index: 10000;
+        border-radius: 20;
+        .friend-photos{
+            Image{
+                border-radius: 50%;
+                height:100;
+                width: 100;
+            }
+        }
+        Label {
+            color: black;
+            font-size: 24;
+        }
+    }
+   
+}
+
+.cross{
+    color: black;
+    font-weight: 900;
+    font-size: 30;
+}
+
+.winner{
+    background: url('~/assets/img/winner.jpg');
+    padding-top: 5%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mt20{
+    transform: translateY(-20);
 }

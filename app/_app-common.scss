@@ -1,5 +1,6 @@
 @import "~@nativescript/theme/core";
 @import "~@nativescript/theme/blue";
+@import "app/assets/styles/variables";
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
@@ -18,4 +19,65 @@
 .far {
     font-family: "Font Awesome 5 Free", "fa-regular-400";
     font-weight: 400;
+}
+
+Label, Button {
+    &.fa {
+        font-family: 'Font Awesome 5 Free', 'fa-regular-400';
+        font-weight: 400;
+    }
+    &.fas {
+        font-family: 'Font Awesome 5 Free', 'fa-solid-900';
+        font-weight: 900;
+    }
+    &.fab {
+        font-family: 'Font Awesome 5 Free', 'fa-brands-400';
+        font-weight: 400;
+    }
+}
+
+
+$directions: t r b l;
+$measures: 5 10 15 20 25 30;
+$types: m p;
+
+@each $measure in $measures {
+    @each $direction in $directions {
+        @each $type in $types {
+            $typeFull: "";
+            @if $type == "m" {
+                $typeFull: "margin";
+            } 
+            @else {
+                $typeFull: "padding";
+            } 
+            .#{$typeFull}-#{measure} {
+                #{$typeFull}: #{$measure};
+            }
+            .#{$typeFull}-#{$direction}-#{$measure} {
+                $directionFull: "";
+                @if $direction == "t" {
+                     $directionFull: "top";
+                }
+                @if $direction == "r" {
+                    $directionFull: "right";
+                }
+                @if $direction == "b" {
+                    $directionFull: "bottom";
+                }
+                @if $direction == "l" {
+                    $directionFull: "left";
+                }
+                #{$typeFull}-#{$directionFull}: #{$measure};
+            }
+        }
+    }
+}
+
+.translate1000{
+    transform: translateY(1000);
+}
+
+.d-none{
+    visibility: hidden;
 }
