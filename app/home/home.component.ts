@@ -99,11 +99,7 @@ export class HomeComponent implements OnInit {
         this.bgImg = randomBg;
   }
 
-  checkAnswer($event, tap) {
-    if(tap === 'tap1') {
-      this.tap1 = "background: green";
-      this.tap = false;
-    }
+  checkAnswer($event) {
     if ($event === this.selectedQuestion.answer) {
       this.onCorrectAnswer()
       setTimeout(() => {

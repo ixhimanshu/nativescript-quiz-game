@@ -40,20 +40,20 @@
 
           <FlexboxLayout class="answers-wrapper" flexDirection="column">
 
-            <FlexboxLayout  *ngIf="tap" alignItems="flex-start"> <Label text="1."></Label> <Label
-              (tap)="checkAnswer(selectedQuestion.option1, tap1)" [text]="selectedQuestion.option1"> </Label>
+            <FlexboxLayout  alignItems="flex-start"> <Label text="1."></Label> <Label
+              (tap)="checkAnswer(selectedQuestion.option1)" [text]="selectedQuestion.option1"> </Label>
             </FlexboxLayout>
 
             <FlexboxLayout alignItems="flex-start"> <Label text="2. "></Label> <Label
-               (tap)="checkAnswer(selectedQuestion.option2, tap2)" [text]="selectedQuestion.option2"> </Label>
+               (tap)="checkAnswer(selectedQuestion.option2)" [text]="selectedQuestion.option2"> </Label>
             </FlexboxLayout>
 
             <FlexboxLayout alignItems="flex-start"> <Label text="3. "></Label> <Label
-               (tap)="checkAnswer(selectedQuestion.option3, tap3)" [text]="selectedQuestion.option3"> </Label>
+               (tap)="checkAnswer(selectedQuestion.option3)" [text]="selectedQuestion.option3"> </Label>
             </FlexboxLayout>
 
             <FlexboxLayout alignItems="flex-start"> <Label text="4. "></Label> <Label
-               (tap)="checkAnswer(selectedQuestion.option4, tap4)" [text]="selectedQuestion.option4"> </Label>
+               (tap)="checkAnswer(selectedQuestion.option4)" [text]="selectedQuestion.option4"> </Label>
             </FlexboxLayout>
 
 
