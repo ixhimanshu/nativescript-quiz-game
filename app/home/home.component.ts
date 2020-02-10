@@ -2,10 +2,13 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { Page, View, getViewById } from 'tns-core-modules/ui/page/page';
 import { AnimationCurve } from 'tns-core-modules/ui/enums/enums';
 import { screen } from "tns-core-modules/platform";
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import set1 from '../assets/questions/set1.json';
+import set1 from '../assets/json/questions.json';
 import { Router } from '@angular/router';
+import * as orientation from 'nativescript-orientation';
+import { android as androidApp } from 'tns-core-modules/application';
+import { device } from 'tns-core-modules/platform';
+declare var android: any;
 
 
 @Component({
@@ -53,8 +56,20 @@ export class HomeComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-   
+    orientation.setOrientation('landscape', false);
+    // orientation.disableRotation();
+    if (androidApp && device.sdkVersion >= '21') {
+      const View = android.view.View;
+      const window = androidApp.startActivity.getWindow();
+      const decorView = window.getDecorView();
+      decorView.setSystemUiVisibility(
+          View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+          View.SYSTEM_UI_FLAG_FULLSCREEN |
+          View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+      );
   }
+  }
+
 
   initialAnimation() {
     this.getQuestions()
@@ -69,7 +84,7 @@ export class HomeComponent implements OnInit {
     })
     .then(() => {
       this.topValueNoob = this.height - noob.getActualSize().height;
-      this.leftValueDora = this.width - (dora.getActualSize().width*1.3);
+      this.leftValueDora = this.width - (dora.getActualSize().width*1);
       this.moneyWonLeft = this.width - 190;
     })
   }
@@ -77,7 +92,7 @@ export class HomeComponent implements OnInit {
   getQuestions() {
         this.currentQuestionState++;
         var min = 0;
-        var max = 9;
+        var max = 29;
         var random = Math.floor(Math.random() * (+max - +min)) + +min;
         this.selectedQuestion = this.set1[random];
         var randomBg = Math.floor(Math.random() * (+4 - +1)) + +1;
@@ -123,7 +138,7 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       correct.animate({ translate: { x:0, y:1000 }, duration, curve })
     },2000)
-    if(this.currentQuestionState === 5) {
+    if(this.currentQuestionState === 10) {
       this.isGameWon = true;
       setTimeout( () => {
         this.route.navigate(['/landing-page']);

@@ -1,4 +1,4 @@
-<AbsoluteLayout #kqd (onloaded)="initialAnimation()" id="login-wrapper" width="100%" height="100%">
+<AbsoluteLayout #kqd (onloaded)="initialAnimation()" id="login-wrapper" width="100%" height="100%" class="m-r-20 m-l-20">
 
   <StackLayout  style="background-image:url('~/assets/img/bg/game_background_{{bgImg}}.png')" class="bg-d1" width="100%" height="100%">
 
@@ -6,7 +6,7 @@
       alignItems="center">
 
       <AbsoluteLayout #loginContainer width="100%" height="100%">
-        <FlexboxLayout class="top-section" top="0" class="border" height="100" width="100%" justifyContent="space-between" alignItems="center"
+        <FlexboxLayout class="top-section" top="-10" class="border" height="100" width="100%" justifyContent="space-between" alignItems="center"
           class="que">
 
           <FlexboxLayout alignItems="center" justifyContent="flex-start" class="lifelines" width="33%">
@@ -31,7 +31,7 @@
 
 
 
-        <FlexboxLayout #queans width="100%" top="100" justifyContent="center" flexDirection="column" alignItems="center"
+        <FlexboxLayout #queans width="100%" top="90" justifyContent="center" flexDirection="column" alignItems="center"
           class="questions-wrapper">
           <FlexboxLayout justifyContent="center" alignItems="center" class="questions-title" width="110%">
             <Label text="{{'Q' + currentQuestionState + ': ' }}" textWrap="true"></Label>

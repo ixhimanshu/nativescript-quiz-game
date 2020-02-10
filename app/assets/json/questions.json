@@ -1,5 +1,101 @@
 [
     {
+        "question": "Which is considered as the biggest port of India ?",
+        "option1": "kolkata",
+        "option2": "Cochin",
+        "option3": "Chennai",
+        "option4": "Mumbai",
+        "answer": "Mumbai"
+    },
+    {
+        "question": "The gas used for making vegetables is ?",
+        "option1": "Oxygen",
+        "option2": "Carbon dioxide",
+        "option3": "Hydrogen",
+        "option4": "Nitrogen",
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "The hottest planet in the solar system ?",
+        "option1": "Mercury",
+        "option2": "Venus",
+        "option3": "Jupiter",
+        "option4": "Saturn",
+        "answer": "Venus"
+    },
+    {
+        "question": "One People, One State, One leader” was the policy of ?",
+        "option1": "Stalin",
+        "option2": "Hitler",
+        "option3": "Lenin",
+        "option4": "Mussolin",
+        "answer": "Hitler"
+    },
+    {
+        "question": "The river that flows through Delhi is ?",
+        "option1": "Ganga",
+        "option2": "Indus",
+        "option3": "Yamuna",
+        "option4": "Narmada",
+        "answer": "Yamuna"
+    },
+    {
+        "question": "National Income estimates in India are prepared by",
+        "option1": "Planning Commission",
+        "option2": "Reserve Bank of India",
+        "option3": "Central statistical organisation",
+        "option4": "Indian statistical Institute",
+        "answer": "Central statistical organisation"
+    },
+    {
+        "question": "The tropic of cancer does not pass through which of these Indian states ?",
+        "option1": "Madhya Pradesh",
+        "option2": "West Bengal",
+        "option3": "Rajasthan",
+        "option4": "Odisha",
+        "answer": "Madhya Pradesh"
+    },
+    {
+        "question": "Fathometer is used to measure",
+        "option1": "Earthquakes",
+        "option2": "Rainfall",
+        "option3": "Ocean depth",
+        "option4": "Sound intensity",
+        "answer": "Ocean depth"
+    },
+    {
+        "question": "The purest form of iron is",
+        "option1": "wrought iron",
+        "option2": "steel",
+        "option3": "pig iron",
+        "option4": "nickel steel",
+        "answer": "wrought iron"
+    },
+    {
+        "question": "How many colours are there in a rainbow?",
+        "option1": "9",
+        "option2": "7",
+        "option3": "6",
+        "option4": "8",
+        "answer": "7"
+    },
+    {
+        "question": "Which animal is known as the ‘Ship of the Desert?",
+        "option1": "Lion",
+        "option2": "Tiger",
+        "option3": "Camel",
+        "option4": "Rat",
+        "answer": "Camel"
+    },
+    {
+        "question": "Which month of the year has the least number of days?",
+        "option1": "January",
+        "option2": "Februrary",
+        "option3": "April",
+        "option4": "May",
+        "answer": "Februrary"
+    },
+    {
         "question": "Gir National Park in Gujarat is famous for?",
         "option1": "Elephant",
         "option2": "Rhinoceros",
@@ -70,6 +166,79 @@
         "option3": "Jupiter",
         "option4": "Saturn",
         "answer": "Venus"
+    },
+    {
+        "question": "Who among the following sports personalities has been awarded Padma Vibhushan for the year 2020?",
+        "option1": "Virat Kohli",
+        "option2": "P V Sindhu",
+        "option3": "Rohit Sharma",
+        "option4": "M. C. Mary Kom",
+        "answer": "M. C. Mary Kom"
+    },
+    {
+        "question": "In Educational technology, application of psychology is known as -",
+        "option1": "Software approach",
+        "option2": "Hardware approach",
+        "option3": "Pedagogic approach",
+        "option4": "Systems analysis",
+        "answer": "Software approach"
+    },
+    {
+        "question": "The World Largest desert is ",
+        "option1": "TharB",
+        "option2": "Sahara",
+        "option3": "Kalahari",
+        "option4": "Sonoran",
+        "answer": "Sahara"
+    },
+    {
+        "question": "Which soil is suitable for agriculture ?",
+        "option1": "Red soil",
+        "option2": "Black soil",
+        "option3": "Peaty soil",
+        "option4": "Sand",
+        "answer": "Peaty soil"
+    },
+    {
+        "question": "The device used for measuring altitudes is ?",
+        "option1": "altimeter",
+        "option2": "ammeter",
+        "option3": "audiometer",
+        "option4": "galvanometer",
+        "answer": "altimeter"
+    },
+    {
+        "question": "The Gate way of India is ?",
+        "option1": "Chennai",
+        "option2": "Mumbai",
+        "option3": "Agra",
+        "option4": "Delhi",
+        "answer": "Delhi"
+    },
+    {
+        "question": "The first chairman of the Atomic Energy Commission was ?",
+        "option1": "Dr.C.V.Raman",
+        "option2": "Dr.H.J.Bhabha",
+        "option3": "Dr.A.P.J.Abdul Kalam",
+        "option4": "Dr.Vickram Sarabhai",
+        "answer": "Dr.H.J.Bhabha"
+    },
+    {
+        "question": "How many hours are there in two days?",
+        "option1": "46",
+        "option2": "54",
+        "option3": "44",
+        "option4": "48",
+        "answer": "48"
+    },
+    {
+        "question": "How many millimetres are there in 1cm?",
+        "option1": "100",
+        "option2": "1000",
+        "option3": "10",
+        "option4": "10000",
+        "answer": "10"
     }
+
 
 ]
