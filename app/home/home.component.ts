@@ -45,6 +45,8 @@ export class HomeComponent implements OnInit {
   isAnswerShown: false;
   bgImg: any;
   isGameWon: boolean;
+  isAudienceUsed: boolean = false;
+  isPhoneUsed: boolean = false;
 
 
   constructor(private page: Page, private http: HttpClient, private route: Router) {
@@ -172,18 +174,45 @@ export class HomeComponent implements OnInit {
   }
 
   onAudience() {
-    this.isAnswerShown = false;
-    this.isAudience = true;
-    const duration = 500;
-    const curve = AnimationCurve.easeInOut;
-    this.queans.nativeElement.animate({translate:{x:1000, y:0}, duration, curve})
+    if(this.isAudienceUsed === false) {
+      this.isAnswerShown = false;
+      this.isAudience = true;
+      const duration = 500;
+      const curve = AnimationCurve.easeInOut;
+      this.queans.nativeElement.animate({translate:{x:1000, y:0}, duration, curve})
+    } else {
+      const lifelineused = < View > getViewById(this.kqd.nativeElement, "lifelineused");
+      const duration = 500;
+      const curve = AnimationCurve.easeInOut;
+      lifelineused.animate({ translate: { x:0, y:0 }, duration, curve })
+      this.moneyWon = 0;
+      setTimeout(() => {
+        lifelineused.animate({ translate: { x:0, y:1000 }, duration, curve })
+        this.isAudienceUsed = true;
+      },2000)
+    }
+   
   }
 
   onPhone() {
-    this.isPhone = true;
-    const duration = 500;
-    const curve = AnimationCurve.easeInOut;
-    this.queans.nativeElement.animate({translate:{x:1000, y:0}, duration, curve})
+    if(this.isPhoneUsed === false) {
+      this.isPhone = true;
+      const duration = 500;
+      const curve = AnimationCurve.easeInOut;
+      this.queans.nativeElement.animate({translate:{x:1000, y:0}, duration, curve})
+    } else {
+      this.isPhoneUsed = true;
+
+      const lifelineused = < View > getViewById(this.kqd.nativeElement, "lifelineused");
+      const duration = 500;
+      const curve = AnimationCurve.easeInOut;
+      lifelineused.animate({ translate: { x:0, y:0 }, duration, curve })
+      this.moneyWon = 0;
+      setTimeout(() => {
+        lifelineused.animate({ translate: { x:0, y:1000 }, duration, curve })
+      },2000)
+    }
+    
   }
 
   onCloseAudience(){
@@ -192,6 +221,7 @@ export class HomeComponent implements OnInit {
     const duration = 500;
     const curve = AnimationCurve.easeInOut;
     this.queans.nativeElement.animate({translate:{x:0, y:0}, duration, curve})
+    this.isAudienceUsed = true;
   }
 
   onClosePhone() {
@@ -199,6 +229,6 @@ export class HomeComponent implements OnInit {
     const duration = 300;
     const curve = AnimationCurve.easeInOut;
     this.queans.nativeElement.animate({translate:{x:0, y:0}, duration, curve})
-
+    this.isPhoneUsed = true;
   }
 }

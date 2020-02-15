@@ -78,7 +78,7 @@
 
   <!-- Audience Poll Lifeline Popup -->
 
-  <FlexboxLayout class="audience" *ngIf="isAudience" flexDirection="column" justifyContent="center" alignItems="center">
+  <FlexboxLayout class="audience" *ngIf="isAudience && !isAudienceUsed" flexDirection="column" justifyContent="center" alignItems="center">
     <FlexboxLayout class="audienceChild" flexDirection="column">
       <FlexboxLayout class="m-b-10" alignItems="center" justifyContent="flex-end">
         <Image (tap)="onCloseAudience()" height="20" width="20" src='~/assets/img/cross.png'></Image>
@@ -93,7 +93,7 @@
 
   <!-- Phone a friend Lifeline Popup -->
 
-  <FlexboxLayout class="phone" *ngIf="isPhone" flexDirection="column" justifyContent="center" alignItems="center">
+  <FlexboxLayout class="phone" *ngIf="isPhone && !isPhoneUsed" flexDirection="column" justifyContent="center" alignItems="center">
     <FlexboxLayout class="phoneChild" flexDirection="column" alignItems="center">
       <FlexboxLayout class="m-b-10" alignItems="center" justifyContent="flex-end">
         <Image (tap)="onClosePhone()" height="20" width="20" src='~/assets/img/cross.png'></Image>
@@ -122,6 +122,12 @@
       
     </FlexboxLayout> -->
   </FlexboxLayout>
+
+  <!-- Lifeline used -->
+
+  <FlexboxLayout backgroundColor="#ff5d6c" id="lifelineused" class="isCorrectAnswer translate1000" top="0" width="100%" height="100%" justifyContent="center" alignItems="center">
+    <Label text="Lifeline already used" textWrap="true"></Label>
+   </FlexboxLayout>
 
  
 </AbsoluteLayout>
