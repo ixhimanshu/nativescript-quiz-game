@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">KBC Quiz with Doraemon</string>
-  <string name="title_activity_kimera">KBCQuizWithDoraemon</string>
+  <string name="app_name">KBC Quiz for Kids</string>
+  <string name="title_activity_kimera">KBCQuizforKids</string>
 </resources>
